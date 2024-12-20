@@ -62,8 +62,8 @@ img {
 
 /*header*/
 .nav-bar {
-    width: 1903px;
-    height: 91px;
+    /*width: 1903px;*/
+    /*height: 91px;*/
     top: 0;
     left: 0;
     color: var(--Black);
@@ -112,12 +112,12 @@ img {
 
 }
 
-.nav-bar-left .t290 {
+.nav-bar-left .hide {
     flex: 1 1 0%;
 
 }
 
-.nav-bar-left .t291 a p {
+.nav-bar-left .hide-link a p {
     color: var(--Black);
 }
 
@@ -126,7 +126,7 @@ img {
     gap: 1.5rem;
 }
 
-.nav-bar-right .t338 {
+.nav-bar-right .button-5g {
     display: flex;
     flex: 0 0 auto;
     color: #ef6820;
@@ -141,7 +141,7 @@ img {
     flex-direction: row;
 }
 
-.nav-bar-right .t530 {
+.nav-bar-right .button-ecom {
     display: flex;
     flex: 0 0 auto;
     color: rgb(255, 255, 255);
@@ -228,6 +228,58 @@ img {
     100% {
         opacity: 1;
         transform: translate3d(0px, 0, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    }
+}
+
+
+/*responsive*/
+/* Responsive Styles */
+
+/* Small Screens (Mobile) */
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        padding: 1rem 2rem;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .banner-2 .banner-2-img {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+/* Medium Screens (Tablet) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .nav-bar {
+        padding: 1rem 3rem;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    .banner-2 .banner-2-img {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+/* Large Screens (Desktop) */
+@media only screen and (min-width: 901px) {
+    .nav-bar {
+        padding: 1rem 7rem;
+    }
+
+    .container {
+        max-width: 1679px;
+    }
+
+    .banner-2 .banner-2-img {
+        padding-left: 12rem;
+        padding-right: 12rem;
     }
 }
 
